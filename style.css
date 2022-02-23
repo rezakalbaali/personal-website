@@ -21,12 +21,23 @@
     transform: rotate(0deg);
   }
   70% {
-    width: 40%;
+    width: 27%;
   }
   100% {
     transform: rotate(360deg);
   }
-  
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  70% {
+    width: 35%;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .welcome {
@@ -41,5 +52,12 @@ h2 {
 
 img {
   width: 50%;
-  animation: ease-in-out 5s rotate 2s 999;
+  animation: ease-in-out 5s rotate2 2s 999;
+}
+
+@media screen and (min-width: 600px) {
+  img {
+    width: 30%;
+    animation: ease-in-out 5s rotate 2s 999;
+  }
 }
