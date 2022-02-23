@@ -2,6 +2,12 @@
   0% {
     opacity: 0;
   }
+  10% {
+    opacity: 8%;
+  }
+  25% {
+    opacity: 15%;
+  }
   50% {
     opacity: 50%;
   }
@@ -9,8 +15,32 @@
     opacity: 100%;
   }
 }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  70% {
+    width: 40%;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  
+}
+
 .welcome {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   animation: ease-in 3s income 0s 1;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  width: 50%;
+  animation: ease-in-out 5s rotate 2s 999;
+    fill-mode;
 }
