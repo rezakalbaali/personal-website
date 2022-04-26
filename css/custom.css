@@ -1,15 +1,42 @@
 @font-face {
-    font-family: 'vazirmatn';
-    src: url('../fonts/vazirmatn/Vazirmatn-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
-*{
-    font-family: 'vazirmatn';
-
+  font-family: "vazirmatn";
+  src: url("../fonts/vazirmatn/Vazirmatn-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
-.navbars{
-    display: flex;
-    flex-direction: row-reverse; 
-    margin-right: 40px;
+* {
+  font-family: "vazirmatn";
+}
+.navbars {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 40px;
+}
+
+.about,
+.rtl {
+  direction: rtl;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+}
+.link:hover {
+  color: aqua;
+}
+
+.telegram {
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  fill: white;
+}
+
+.telegram:hover {
+  fill: black;
 }
